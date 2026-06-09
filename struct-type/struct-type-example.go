@@ -2,29 +2,28 @@ package main
 
 import "fmt"
 
-type Example struct {
-	flag    bool
+type gc struct {
+	newFlag    bool
 	counter int16
 	pi      float32
 }
 
 func main(){
 
-	var  e1 Example
+	var  e1 gc
 
    fmt.Printf("%+v\n", e1)
 
-	 e2 := Example {
-		 flag :  true,
+	 e2 := gc {
+		 newFlag :  true,
 		 counter:  200,
 		 pi     :  3.14,
 		
 	 }
 
 
-
-	 fmt.Println("flag: ", e2.flag)
 	 fmt.Println("Counter: ", e2.Counter)
-	 fmt.Println("Pi: ", e2.pi)
+	 fmt.Println("newFlag: ", e2.newFlag)
+	 fmt.Println("Pi: ", pi)
  }
 
