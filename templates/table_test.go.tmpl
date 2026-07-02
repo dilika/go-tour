@@ -1,0 +1,25 @@
+// Modèle de test table-driven.
+// Copie dans <pkg>/<pkg>_test.go, adapte le nom du package et de la fonction.
+package PKG_NAME
+
+import "testing"
+
+func TestFUNCNAME(t *testing.T) {
+	tests := []struct {
+		name string
+		args ARG_TYPE
+		want  RET_TYPE
+	}{
+		{"cas trivial", ARG_VALUE, WANT_VALUE},
+		{"cas limite",  ARG_VALUE, WANT_VALUE},
+	}
+
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			got := FUNCNAME(tt.args)
+			if got != tt.want {
+				t.Errorf("got %v, want %v", got, tt.want)
+			}
+		})
+	}
+}

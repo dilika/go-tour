@@ -22,8 +22,8 @@ func main(){
 	 }
 
 
-	 fmt.Println("Counter: ", e2.Counter)
+	 fmt.Println("Counter: ", e2.counter)
 	 fmt.Println("newFlag: ", e2.newFlag)
-	 fmt.Println("Pi: ", pi)
+	 fmt.Println("Pi: ", e2.pi)
  }
 
