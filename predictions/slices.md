@@ -1,4 +1,4 @@
-# Mes predictons sur le chapitre des arrays( Sans regarder le code )
+# Mes predictons sur le chapitre des slice( Sans regarder le code )
 
 ## Example1: Declare and Length
   - predictons: La déclaration d'une slice se fait de la meme maniere que celle d'un array, a la creation on peut specifier ou pas la length de la sclice
