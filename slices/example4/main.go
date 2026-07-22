@@ -1,6 +1,6 @@
 package main
 
-import from "fmt"
+import "fmt"
 
 func main() {
 
@@ -19,31 +19,35 @@ func main() {
 	fruits1 := fruits[2:4]
 	inspectSlice(fruits1)
 
-	fmt.Println("=========================================================")
+	fmt.Printf("=========================================================\n\n")
 	// Change the value of the index 0 of slice2.
 	fruits1[0] = "Tomatoe"
 
 	// Display the change across all existing slices.
+	fmt.Printf("==============================< inspect for fruits >=============================\n")
 	inspectSlice(fruits)
-	inspectSlice(fruits1)
 
+	fmt.Printf("\n==============================< inspect for fruits1 >=============================\n")
+	inspectSlice(fruits1)
 	// Make a new slice big enough to hold elements of slice 1 and copy the
 	// values over using the builtin copy function.
 	newFruits := make([]string, len(fruits))
 	copy(newFruits, fruits)
+	fmt.Printf("\n==============================< inspect for newFruits >=============================\n")
 	inspectSlice(newFruits)
 
 	// inspectSlice exposes the slice header for review.
 
-	func inspectSlice([]string slices) {
-		fmt.Printf("capacity[%d]\t length[%d] ", cap(slices), len(slices))
+}
+func inspectSlice(slices []string) {
+	fmt.Printf("capacity[%d]\t length[%d] ", cap(slices), len(slices))
 
-		for i, s := range slices {
-			fmt.Println("Index[%d]\t Addresse[%p]\t values[%s] ",
-			i,
-			&slices[i],
-			s
-		)
-	}
+	for i, s := range slices {
+		fmt.Println("Index[%d]\t Addresse[%p]\t values[%s] ",
+		i,
+		&slices[i],
+		s,
+	)
+}
 }
 
