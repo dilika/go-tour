@@ -1,0 +1,12 @@
+# Go build and test artifacts
+/main
+/bin/
+*.test
+coverage.out
+
+# Local IDE settings
+.idea/
+.vscode/
+
+# macOS metadata
+.DS_Store
