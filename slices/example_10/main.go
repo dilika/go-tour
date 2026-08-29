@@ -32,4 +32,3 @@ func inspectSlice(slice []string) {
 		s)
 	}
 }
-}

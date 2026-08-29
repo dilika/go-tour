@@ -10,7 +10,7 @@ func main(){
 // Given a stream of bytes to be processed.
 	x := []byte{0x0A, 0x15, 0x0e, 0x28, 0x05, 0x96, 0x0b, 0xd0, 0x0}
 
-/ Perform a linear traversal across the bytes, never making
+// Perform a linear traversal across the bytes, never making
 	// copies of the actual data but still passing those bytes
 	// to the binary function for processing.
 

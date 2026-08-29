@@ -27,7 +27,8 @@ func main(){
 	fmt.Printf("Do I have Write permission? %v\n", permission&Write != 0)
 	fmt.Printf("Do I have Exec permission? %v\n", permission&Exec != 0)
 
-	fmt.Println("=\n=============== Display Fonction ===================") printPermsission(permission)
+	fmt.Println("=\n=============== Display Fonction ===================")
+	printPermsission(permission)
 	printPermsission(fullAccess)
 
 }
