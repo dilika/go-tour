@@ -1,34 +1,33 @@
 package main
 
-
 import "fmt"
 
 // user is a struct type that declares user information.
 type user struct {
-	id int
+	id   int
 	name string
 }
 
 func main() {
 
 	// Declare and initialize a value of type user.
-	u1 := user {
-		id: 1,
+	u1 := user{
+		id:   1,
 		name: "Salvor Hardin",
 	}
 
 	// Declare and initialize a value of type user.
-	u2 := user {
-		id: 2,
+	u2 := user{
+		id:   2,
 		name: "Gaal Dornick",
 	}
 
 	// Display both user values.
 	display(u1, u2)
-	
+
 	// Create a slice of user values.
 	u3 := []user{
-    {4, "Johran Sutt"},
+		{4, "Johran Sutt"},
 		{5, "Lewis Pirenne"},
 	}
 
@@ -51,8 +50,7 @@ func display(users ...user) {
 	}
 }
 
-
 // change shows how the backing array is shared.
-func change(users ...user){
+func change(users ...user) {
 	users[1] = user{6, "Hobert Manlio"}
 }

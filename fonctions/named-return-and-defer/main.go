@@ -2,8 +2,7 @@ package main
 
 import "fmt"
 
-
-func processFile(filename string) (err error){
+func processFile(filename string) (err error) {
 	file, err := openFile(filename)
 	if err != nil {
 		return err
@@ -16,7 +15,6 @@ func processFile(filename string) (err error){
 	return nil
 }
 
-
 func openFile(name string) (*FakeFile, error) {
 	return &FakeFile{}, nil
 }
@@ -25,9 +23,8 @@ func (f *FakeFile) close() error {
 	return nil
 }
 
-type  FakeFile  struct {}
+type FakeFile struct{}
 
-
-func main(){
+func main() {
 	processFile("data.txt")
 }

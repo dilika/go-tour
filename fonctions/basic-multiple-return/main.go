@@ -1,10 +1,9 @@
 package main
 
 import (
-	"fmt"
 	"errors"
+	"fmt"
 )
-
 
 func divide(a int, b int) (int, error) {
 
@@ -12,12 +11,11 @@ func divide(a int, b int) (int, error) {
 		return 0, errors.New("Can't divide a number by 0")
 	}
 
-	return a/b, nil
+	return a / b, nil
 
 }
 
-
-func main(){
+func main() {
 	numerator := 20
 	denom := 5
 

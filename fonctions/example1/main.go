@@ -1,29 +1,26 @@
-
 package main
 
 // named and struct types.
 // Sample program to show how functions can return multiple values while using
 
 import (
-	"fmt"
 	"encoding/json"
+	"fmt"
 )
 
-
 type user struct {
-	ID int
+	ID   int
 	name string
 }
 
-
-func main(){
+func main() {
 
 	user := struct {
-		ID int
+		ID   int
 		name string
-	} {
-		ID : 123,
-		name : "Sally",
+	}{
+		ID:   123,
+		name: "Sally",
 	}
 
 	u, err := retrieveUser(user.name)
@@ -36,8 +33,7 @@ func main(){
 
 }
 
-
-func retrieveUser(name string) (*user, error){
+func retrieveUser(name string) (*user, error) {
 
 	r, err := getUser(name)
 
@@ -50,8 +46,6 @@ func retrieveUser(name string) (*user, error){
 
 	return &u, error
 }
-
-
 
 func getUser(name string) (string, error) {
 	response := `{"id":123, "name":"sally"}`
