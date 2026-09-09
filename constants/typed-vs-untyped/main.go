@@ -1,15 +1,13 @@
-package main 
-
+package main
 
 import "fmt"
 
-func main(){
+func main() {
 
 	const (
-		PI = 3.14159
+		PI              = 3.14159
 		TypedPI float64 = 3.14159
 	)
-
 
 	fmt.Println(PI, TypedPI)
 

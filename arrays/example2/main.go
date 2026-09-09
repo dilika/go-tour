@@ -2,8 +2,7 @@ package main
 
 import "fmt"
 
-
-func main(){
+func main() {
 
 	var five [5]int
 

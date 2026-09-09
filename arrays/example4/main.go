@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main(){
+func main() {
 
 	// Using the pointer semantic form of the for range.
 	friends := [5]string{"Annie", "Betty", "Charley", "Doug", "Edward"}
@@ -15,7 +15,6 @@ func main(){
 			fmt.Printf("Afr[%+s] : ", friends[i])
 		}
 	}
-
 
 	friends = [5]string{"Annie", "Betty", "Charley", "Doug", "Edward"}
 	fmt.Printf("Bfr[%s] : ", friends[1])

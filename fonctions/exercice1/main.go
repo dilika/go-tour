@@ -16,20 +16,20 @@ import (
 // Declare a type named user.
 
 type user struct {
-	name string
+	name     string
 	lastName string
-	age int
+	age      int
 }
 
 // Declare a function that creates user type values and returns a pointer
 // to that value and an error value of nil.
 
-func createNewUser() (*user, error)/* (pointer return arg, error return arg) */ {
+func createNewUser() (*user, error) /* (pointer return arg, error return arg) */ {
 
-	newUser := user {
-		name: "Salvor",
+	newUser := user{
+		name:     "Salvor",
 		lastName: "Harding",
-		age : 200,
+		age:      200,
 	}
 
 	return &newUser, nil

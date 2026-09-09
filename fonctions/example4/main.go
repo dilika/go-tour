@@ -2,7 +2,6 @@ package main
 
 import "fmt"
 
-
 func main() {
 
 	var n int
@@ -20,7 +19,7 @@ func main() {
 	f()
 
 	// Defer the call to the anonymous function till after main returns.
-	defer func(){
+	defer func() {
 		fmt.Println("Defer 1 : ", n)
 	}()
 	// Set the value of n to 3 before the return.
@@ -30,7 +29,7 @@ func main() {
 	// Call the anonymous function through the variable.
 	f()
 	// Defer the call to the anonymous function till after main returns.
-	defer func(){
+	defer func() {
 		fmt.Println("Defer 2: ", n)
 	}()
 }

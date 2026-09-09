@@ -12,18 +12,16 @@ func main() {
 	fruits[3] = "Watermelon"
 	fruits[4] = "PineApple"
 
-
-// inspectSlice exposes the slice header for review.
+	// inspectSlice exposes the slice header for review.
 	inspectSlice(fruits)
 }
-
 
 func inspectSlice(fruits []string) {
 	fmt.Printf("length[%d] capacity[%d]\n ", len(fruits), cap(fruits))
 	for i := range fruits {
 		fmt.Printf("[%d] %p %s\n",
-		i,
-		&fruits[i],
-		fruits[i])
+			i,
+			&fruits[i],
+			fruits[i])
 	}
 }

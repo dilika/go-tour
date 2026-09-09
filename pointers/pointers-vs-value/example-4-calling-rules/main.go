@@ -27,8 +27,6 @@ func main() {
 	fmt.Println("============= Call on litteral variables =========================")
 	ByteSlice("Test").ValueMethode()
 
-
-
 	fmt.Println("\n\n============= Litteral variables Test ============================")
 
 	var litteral ByteSlice = []byte("Test")

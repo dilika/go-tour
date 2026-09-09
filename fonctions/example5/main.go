@@ -5,14 +5,13 @@ import (
 	"runtime"
 )
 
-func main(){
+func main() {
 	if err := testPanic(); err != nil {
 		fmt.Println("Error ", err)
 	}
 }
 
-
-func testPanic() (err error){
+func testPanic() (err error) {
 
 	defer catchPanic(&err)
 
@@ -20,14 +19,13 @@ func testPanic() (err error){
 
 	err = mimicError("1")
 
-	var p *int 
+	var p *int
 
 	*p = 10
 
 	fmt.Println("End TEst")
 	return err
 }
-
 
 func catchPanic(err *error) {
 
@@ -44,7 +42,6 @@ func catchPanic(err *error) {
 
 	}
 }
-
 
 func mimicError(key string) error {
 	return fmt.Errorf("Mimic error : %s ", key)

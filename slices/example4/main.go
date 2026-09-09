@@ -5,7 +5,7 @@ import "fmt"
 func main() {
 
 	// Create a slice with a length of 5 elements and a capacity of 8.
-  fruits := make([]string, 5, 8)
+	fruits := make([]string, 5, 8)
 	fruits[0] = "Apple"
 	fruits[1] = "Orange"
 	fruits[2] = "Pinapple"
@@ -40,14 +40,13 @@ func main() {
 
 }
 func inspectSlice(slices []string) {
-	fmt.Printf("capacity[%d]\t length[%d] ", cap(slices), len(slices))
+	fmt.Printf("capacity[%d] length[%d]\n", cap(slices), len(slices))
 
 	for i, s := range slices {
-		fmt.Println("Index[%d]\t Addresse[%p]\t values[%s] ",
-		i,
-		&slices[i],
-		s,
-	)
+		fmt.Printf("Index[%d] Addresse[%p] values[%s]\n",
+			i,
+			&slices[i],
+			s,
+		)
+	}
 }
-}
-
